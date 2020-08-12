@@ -1,6 +1,5 @@
-
-export * from '../index.page'
+export * from "../index.page";
 
 export const usePageStore = () => {
-  return {}
-}
+  return {};
+};
