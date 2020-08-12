@@ -1,5 +1,5 @@
 export const usePage = () => {
-  return <main id="page">Page</main>;
+  return <main id="page">Pagee</main>;
 };
 
 export default usePage;
