@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #951619;
+
+  .logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    &:active {
+      border: solid #a5494b;
+    }
+
+    .frame {
+      height: 40vh;
+      width: 30vw;
+      margin-top: -4vw;
+    }
+
+    .drone {
+      position: absolute;
+      display: flex;
+      align-self: center;
+      height: 12vh;
+      width: 7vw;
+      animation: spin 10s linear infinite;
+      
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
