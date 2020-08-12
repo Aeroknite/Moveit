@@ -6,6 +6,8 @@
 # vscode - must uncomment
 # /.vscode/
 
+/assets
+
 # dependencies
 /node_modules
 /.pnp
