@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-starter",
-  "version": "1.0.3",
+  "name": "Moveit",
+  "version": "1.0.4",
   "author": {
     "name": "yourname",
     "email": "your@email.com"
@@ -9,7 +9,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "git@github.com:DecipherCodee/nextjs-starter.git",
+  "repository": "git@github.com:Aeroknite/Moveit.git",
   "license": "MIT",
   "scripts": {
     "set": "npm i",
