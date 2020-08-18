@@ -1,8 +1,11 @@
 import styles from "./utils/style.module.scss";
 
+
 export const useHome = () => {
   return (
     <main className={styles.home}>
+      
+
       <aside className={styles.logo}>
         <svg
           className={styles.frame}

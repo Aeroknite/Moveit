@@ -1,5 +1,11 @@
+import { Categories } from "../utils";
+
 export const usePage = () => {
-  return <main id="page">Page</main>;
+  return (
+    <main id="page">
+      <Categories />
+    </main>
+  );
 };
 
 export default usePage;

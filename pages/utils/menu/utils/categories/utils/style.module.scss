@@ -1,0 +1,13 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .category {
+    margin: 2rem;
+    font-size: 4rem;
+    color: black;
+  }
+}
