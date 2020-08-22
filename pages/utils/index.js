@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import { Footer } from "./footer";
 import { useMenuStore } from "./menu/utils";
 import { useApp } from "../_app.page";
