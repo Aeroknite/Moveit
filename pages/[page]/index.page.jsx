@@ -1,11 +1,11 @@
-import { Categories } from "../utils";
+import { useStore } from "../utils";
 
 export const usePage = () => {
-  return (
-    <main id="page">
-      <Categories />
-    </main>
-  );
+  const {
+    useMenuStore: { Categories },
+  } = useStore();
+
+  return <Categories />;
 };
 
 export default usePage;

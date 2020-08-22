@@ -1,8 +1,19 @@
+@import "styles/variables";
+
 .symbol {
-  height: 3rem;
-  position: absolute;
-  top: 4rem;
   left: 4rem;
   cursor: pointer;
+  position: absolute;
   z-index: 1;
+  top: 4rem;
+
+  div {
+    height: 0.125rem;
+    width: 3rem;
+    background-color: $sand-brown;
+    margin-bottom: 0.78rem;
+    &:nth-child(1) {
+      margin-top: 0.5rem;
+    }
+  }
 }

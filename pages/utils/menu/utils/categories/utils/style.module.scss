@@ -1,3 +1,5 @@
+@import "styles/variables";
+
 .categories {
   display: flex;
   flex-direction: column;
@@ -9,5 +11,8 @@
     margin: 2rem;
     font-size: 4rem;
     color: black;
+    &:hover {
+      color: $terra-cotta;
+    }
   }
 }

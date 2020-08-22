@@ -1,3 +1,6 @@
+@import "styles/variables";
+@import "styles/mixins";
+
 .home {
   display: flex;
   min-height: 100vh;
@@ -28,6 +31,19 @@
       height: 40vh;
       width: 30vw;
       margin-top: -4vw;
+
+      @include set-layout($mm-max-width) {
+        height: 50vh;
+        width: 40vw;
+      }
+      @include set-layout($sm-max-width) {
+        height: 60vh;
+        width: 50vw;
+      }
+      @include set-layout($xsm-max-width) {
+        height: 70vh;
+        width: 60vw;
+      }
     }
 
     .drone {
@@ -37,6 +53,19 @@
       height: 12vh;
       width: 7vw;
       animation: spin 10s linear infinite;
+
+      @include set-layout($mm-max-width) {
+        height: 22vh;
+        width: 10vw;
+      }
+      @include set-layout($sm-max-width) {
+        height: 32vh;
+        width: 13vw;
+      }
+      @include set-layout($xsm-max-width) {
+        height: 42vh;
+        width: 16vw;
+      }
     }
   }
 }
