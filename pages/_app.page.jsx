@@ -1,9 +1,12 @@
 import "./style.scss";
 import { func, string, shape } from "prop-types";
-import { useStore, Symbol, Footer } from "./utils";
+import { useStore } from "./utils";
 
 export const useApp = ({ Component, pageProps }) => {
-  useStore();
+  const {
+    Footer,
+    useMenuStore: { Symbol },
+  } = useStore();
 
   return (
     <main id="app">

@@ -1,7 +1,6 @@
-export * from "..";
-export * from "./symbol/utils";
-export * from "./categories/utils";
+import { Symbol } from "./symbol";
+import { Categories } from "./categories";
 
 export const useMenuStore = () => {
-  return {};
+  return { Symbol, Categories };
 };

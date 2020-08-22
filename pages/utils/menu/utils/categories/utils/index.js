@@ -1,7 +1,5 @@
 import styles from "./style.module.scss";
 
-export * from "..";
-
 const categories = [
   //   "Account",
   "Login/Logout",
