@@ -1,0 +1,8 @@
+@mixin symbol-styles($left:unset, $right:unset) {
+  cursor: pointer;
+  z-index: 2;
+  top: 4rem;
+  left: $left;
+  right: $right;
+  position: absolute;
+}

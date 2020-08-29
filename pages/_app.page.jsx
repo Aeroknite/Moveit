@@ -3,14 +3,11 @@ import { func, string, shape } from "prop-types";
 import { useStore } from "./utils";
 
 export const useApp = ({ Component, pageProps }) => {
-  const {
-    Footer,
-    useMenuStore: { Symbol },
-  } = useStore();
+  const { Footer, Header } = useStore();
 
   return (
     <main id="app">
-      <Symbol />
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </main>

@@ -1,0 +1,9 @@
+@import "styles/variables";
+@import "../../styles";
+
+.symbol {
+  @include symbol-styles($right:4rem);
+  height: 3rem;
+  width: 2rem;
+  fill: $sand-brown;
+}

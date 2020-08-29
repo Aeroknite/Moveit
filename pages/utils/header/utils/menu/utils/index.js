@@ -1,8 +1,10 @@
+import { useState } from "react";
 import styles from "./style.module.scss";
+import { setDisplay } from "../../../..";
 
 const categories = [
   //   "Account",
-  "Login/Logout",
+  "Login",
   "Pricing",
   //   "Payment",
   "Collection",
@@ -17,6 +19,13 @@ export function getCategories() {
   ));
 }
 
-export const useCategoriesStore = () => {
-  return { styles, getCategories: getCategories() };
+export const useMenuStore = () => {
+  const [isFocus, setFocus] = useState(false);
+
+  return {
+    styles,
+    getCategories: getCategories(),
+    isFocus,
+    setDisplay: () => setDisplay({ setFocus }),
+  };
 };
