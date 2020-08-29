@@ -1,14 +1,17 @@
-// import dynamic from "next/dynamic";
+import styles from "./style.module.scss";
 import { Footer } from "./footer";
-import { useMenuStore } from "./menu/utils";
 import { useApp } from "../_app.page";
 import { useHome } from "../index.page";
-import styles from "./style.module.scss";
+import { Header } from "./header";
+
+export function setDisplay({ setFocus }) {
+  return setFocus((isFocus) => !isFocus);
+}
 
 export const useStore = () => {
   return {
     Footer,
-    useMenuStore: useMenuStore(),
+    Header,
     useApp,
     useHome,
     styles,
